@@ -1,6 +1,3 @@
-from types import CodeType
-
-
 def find_gamma(filename):
     with open(filename) as file:
         result = [] # list of lists; first = 0 count, second = 1 count
@@ -36,18 +33,18 @@ def list_to_string(a_list:list):
     for value in a_list:
         string += str(value)
     return string
-    
 
 def main():
-    gamma_code = find_gamma('data/day-3-input.txt')
-    epsilon_code = find_epsilon(gamma_code)
-    print(gamma_code)
-    print(epsilon_code)
-    gamma_string = list_to_string(gamma_code)
-    epsilon_string = list_to_string(epsilon_code)
-    gamma_int = int(gamma_string, 2)
-    epsilon_int = int(epsilon_string, 2)
-    print(gamma_int * epsilon_int)
+    # gamma_code = find_gamma('data/day-3-input.txt')
+    # epsilon_code = find_epsilon(gamma_code)
+    # print(gamma_code)
+    # print(epsilon_code)
+    # gamma_string = list_to_string(gamma_code)
+    # epsilon_string = list_to_string(epsilon_code)
+    # gamma_int = int(gamma_string, 2)
+    # epsilon_int = int(epsilon_string, 2)
+    # print(gamma_int * epsilon_int)
+    pass
 
 if __name__ == '__main__':
     main()
